@@ -1,8 +1,140 @@
 
-
+/* URL fonts Start*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/* URL fonts End */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #13131F;
+}
+
+/* Variáveis Start */
+
+:root {
+    --font-primary: 'Lexend Deca', sans-serif;
+    --font-secondary: 'Inter', sans-serif;
+    --color-primary: #FEFBFB;
+    --color-secondary: #C4C4C4;
+    --bg-button: #8257E6; 
+}
+
+/* Variáveis End */
+
+
+/* Classes repeat Start */
+
+.naped {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--bg-button);
+}
+
+/* Classes repeat End */
+
+
+/* Header Start */
+
+.container {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto; 
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+    margin-left: 300px;
+}
+
+.options {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-primary);
+    cursor: pointer;
+    position: relative;  
+    padding-bottom: 10px;
+}
+
+.options::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    left: 0;
+    height: 2px;
+    background-color: var(--bg-button);
+    transition: all 0.5s ease-in-out;
+}
+
+.options:hover:before {
+    width: 100%;
+    right: 0;
+}
+
+
+.account {
+    width: 120px;
+    padding: 5px 5px;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: var(--color-primary);
+    border: 2px solid var(--bg-button);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.account:hover {
+    background-color:#000;
+}
+
+
+/* Header End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .options::before { 
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    left: 0;
+    height: 2px;
+    background-color: var(--bg-button);
+    transition: all .3s ease-in-out;
+}
+
+.options:hover:before {
+    width: 100%;
+    right: 0;
+} */
