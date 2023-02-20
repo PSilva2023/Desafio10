@@ -1,4 +1,3 @@
-
 /* URL fonts Start*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
@@ -14,17 +13,7 @@ body {
     background-color: #13131F;
 }
 
-/* Variáveis Start */
 
-:root {
-    --font-primary: 'Lexend Deca', sans-serif;
-    --font-secondary: 'Inter', sans-serif;
-    --color-primary: #FEFBFB;
-    --color-secondary: #C4C4C4;
-    --bg-button: #8257E6; 
-}
-
-/* Variáveis End */
 
 
 /* Classes repeat Start */
@@ -43,8 +32,8 @@ body {
 
 .container {
     max-width: 1200px;
-    height: 100vh;
-    margin: 0 auto; 
+    min-height: 100%;
+    margin: 0 auto;
 }
 
 .content-header {
@@ -60,17 +49,18 @@ body {
     margin-left: 300px;
 }
 
-.options {
+.options-a {
     font-family: var(--font-secondary);
     font-weight: 500;
     font-size: 16px;
     color: var(--color-primary);
     cursor: pointer;
-    position: relative;  
-    padding-bottom: 10px;
+    position: relative;
+    padding-bottom: 5px;
+    text-decoration: none;
 }
 
-.options::before {
+.options-a::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -81,7 +71,7 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
-.options:hover:before {
+.options-a:hover:before {
     width: 100%;
     right: 0;
 }
@@ -101,40 +91,176 @@ body {
 }
 
 .account:hover {
-    background-color:#000;
+    background-color: #000;
 }
 
 
 /* Header End */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .options::before { 
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 0;
-    left: 0;
-    height: 2px;
-    background-color: var(--bg-button);
-    transition: all .3s ease-in-out;
+h1 {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--color-primary);
+    line-height: 60px;
+    padding-top: 100px;
 }
 
-.options:hover:before {
+h2 {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-secondary);
+    max-width: 490px;
+    line-height: 30px;
+    padding-top: 15px;
+}
+
+
+/* Content-main Start */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-main {
+    width: 840px;
+    height: 600px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card-twd {
+    background-image: url(../images/pg1/bg-twd.png);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, .4);
+    position: relative;
     width: 100%;
-    right: 0;
-} */
+    height: 370px;
+}
+
+.card-twd .lorem {
+    position: absolute;
+    width: 80px;
+    padding: 4px 3px;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    top: 18px;
+    left: 30px;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-primary);
+    background-color: var(--bg-button);
+}
+
+.card-twd p {
+    position: absolute;
+    bottom: 0;
+    padding: 0px 60px 20px 28px;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 26px;
+    color: var(--color-primary);
+    background-image: linear-gradient(to bottom,
+            rgba(19, 19, 31, 0),
+            #13131F);
+}
+
+.content-cards {
+    margin-bottom: 35px;
+}
+
+.card-img-main {
+    position: relative;
+    width: 200px;
+    height: 151px;
+    background-image: url(../images/pg1/card-img1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.content-cards .p-card {
+    position: absolute;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    width: 70px;
+    padding: 3px 2px;
+    background-color: var(--bg-button);
+    color: var(--color-primary);
+    top: 7px;
+    left: 12px;
+    border-radius: 5px;
+    
+
+}
+
+/* Content-main End */
+
+
+/* Content-aside Start */
+
+aside {
+    width: 338px;
+    height: 600px;
+}
+
+.card-aside {
+    background-image: url(../images/pg1/card-aside1.png);
+    width: 100%;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0,0,0, .2);
+    margin-top: 60px;
+    position: relative;
+
+    
+}
+
+.lorem-card {
+    font-family: var(--font-primary);
+    font-size: 12px;
+    background-color: var(--bg-button);
+    text-align: center;
+    color: var(--color-primary);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 65px;
+    padding: 3px 2px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.card-aside p {
+    position: absolute;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--color-primary);
+    bottom: 0;
+    padding: 0px 20px 10px 10px;
+    background-image: linear-gradient( to bottom,
+    rgba(19, 19, 31, 0),
+    #13131F);
+}
+
+.card-aside2 {
+    background-image: url(../images/pg1/card-aside2.png);
+    margin-top: 15px;
+}
+
+
+/* Content-aside End */
