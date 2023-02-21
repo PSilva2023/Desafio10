@@ -11,9 +11,8 @@
 
 body {
     background-color: #13131F;
+    padding-bottom: 60px;
 }
-
-
 
 
 /* Classes repeat Start */
@@ -126,12 +125,13 @@ h2 {
 
 .content-main {
     width: 840px;
-    height: 600px;
+    min-height: 600px;
     margin-top: 60px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
+
 
 .card-twd {
     background-image: url(../images/pg1/bg-twd.png);
@@ -175,7 +175,32 @@ h2 {
 }
 
 .content-cards {
-    margin-bottom: 35px;
+    margin-top: 40px;
+    display: flex;
+    height: 832px;
+    gap: 40px 20px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.content-cards::-webkit-scrollbar {
+    width: 10px;
+    border: 1px solid #282830;
+}
+
+.content-cards::-webkit-scrollbar-thumb {
+    background-color: var(--bg-button);
+}
+
+.content-cards::-webkit-scrollbar-track {
+    background-color: #282830;
+}
+
+.content-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding-top: 5px;
 }
 
 .card-img-main {
@@ -185,6 +210,35 @@ h2 {
     background-image: url(../images/pg1/card-img1.png);
     background-size: cover;
     background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.card-img2 {
+    background-image: url(../images/pg1/card-img2.png);
+}
+
+.card-img3 {
+    background-image: url(../images/pg1/card-img3.png);
+}
+
+.card-img4 {
+    background-image: url(../images/pg1/card-img4.png);
+}
+
+.card-img5 {
+    background-image: url(../images/pg1/card-img5.png);
+}
+
+.card-img-main::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+    background-image: linear-gradient(to bottom,
+            rgba(19, 19, 31, 0),
+            #13131F);
 }
 
 .content-cards .p-card {
@@ -200,9 +254,51 @@ h2 {
     top: 7px;
     left: 12px;
     border-radius: 5px;
-    
+    cursor: pointer;
+}
+
+.p-card-h1 {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 480px;
+    color: var(--color-primary);
 
 }
+
+.p-card-h2 {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    color: var(--color-secondary);
+    max-width: 470px;
+    font-size: 13px;
+}
+
+.date {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--color-secondary);
+}
+
+.button-card-news {
+    width: 120px;
+    padding: 6px 5px;
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--color-primary);
+    background-color: var(--bg-button);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button-card-news:hover {
+    background-color: #673ec7;
+}
+
+.card-1 {}
 
 /* Content-main End */
 
@@ -222,11 +318,11 @@ aside {
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
-    background-color: rgba(0,0,0, .2);
+    background-color: rgba(0, 0, 0, .2);
     margin-top: 60px;
     position: relative;
 
-    
+
 }
 
 .lorem-card {
@@ -252,15 +348,68 @@ aside {
     color: var(--color-primary);
     bottom: 0;
     padding: 0px 20px 10px 10px;
-    background-image: linear-gradient( to bottom,
-    rgba(19, 19, 31, 0),
-    #13131F);
+    background-image: linear-gradient(to bottom,
+            rgba(19, 19, 31, 0),
+            #13131F);
 }
 
 .card-aside2 {
     background-image: url(../images/pg1/card-aside2.png);
     margin-top: 15px;
 }
+
+h3 {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    max-width: 270px;   
+    color: var(--color-primary);
+    font-size: 22px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--bg-button);
+}
+
+.card-aside-main {
+    width: 338px;
+    height: 250px;
+    margin-top: 15px;
+    background-image: url(../images/pg1/img-main1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: rgba(0,0,0, .3);
+    position: relative;
+}
+
+.card-aside-main2 {
+    background-image: url(../images/pg1/img-main2.png);
+}
+
+.card-aside-main3 {
+    background-image: url(../images/pg1/img-main3.png);
+}
+
+.p-card-main {
+    position: absolute;
+    bottom: 0;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--color-primary);
+    padding: 0px 30px 10px 10px;
+}
+
+.card-aside-main::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to bottom,
+            rgba(19, 19, 31, 0),
+            #13131F);
+}
+
 
 
 /* Content-aside End */
