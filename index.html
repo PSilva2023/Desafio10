@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/css/variaveis.css">
     <link rel="stylesheet" href="Assets/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Napade</title>
@@ -17,14 +16,16 @@
             <div class="content-header">
                 <div class="naped-icon">
                     <span class="naped">Naped</span>
-                    <i class='bx bx-menu icon-menu'></i>
+                    <i id="icon-menu" class='bx bx-menu' onclick="clickMenu()"></i>
                 </div>
-                <div class="menu">
-                    <a href="page2.html" class="options-a">Home</a>
-                    <a href="" class="options-a">Séries</a>
-                    <a href="" class="options-a">Filmes</a>
-                    <a href="" class="options-a">Animes</a>
-                    <a href="" class="options-a">Games</a>
+                <div id="menu">
+                    <ul>
+                        <li><a href="index.html" class="options-a">Home</a></li>
+                        <li><a href="pg-news.html" class="options-a">Séries</a></li>
+                        <li><a href="erro404.html" class="options-a">Filmes</a></li>
+                        <li><a href="erro404.html" class="options-a">Animes</a></li>
+                        <li><a href="erro404.html" class="options-a">Games</a></li>
+                    </ul>
                 </div>
                 <div class="account">Minha conta</div>
             </div>
@@ -199,12 +200,21 @@
             <footer>
                 <span class="naped">Naped</span>
                 <p class="p-footer">
-                    Todas as imagens de filmes, séries e etc são marcas registradas <br/> dos seus respectivos
+                    Todas as imagens de filmes, séries e etc são marcas registradas <br /> dos seus respectivos
                     proprietários.
                 </p>
             </footer>
         </div>
     </main>
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 
 </html>
