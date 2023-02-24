@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/css/style.css">
     <link rel="stylesheet" href="Assets/css/stlyle-news.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Notícias</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container container-news">
         <div class="content-header">
             <div class="naped-icon">
                 <span class="naped">Naped</span>
@@ -26,7 +27,7 @@
                     <li><a href="erro404.html" class="options-a">Games</a></li>
                 </ul>
             </div>
-            <div class="account">Minha conta</div>
+            <a href="erro404.html" class="account">Minha conta</a>
         </div>
         <h1 class="h1-pg-news">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis neque sed odio.
@@ -34,14 +35,106 @@
         <h2 class="h2-pg-news">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h2>
+        <h2 class="h2-pg-news2">
+            O Naped pode ser sua fonte de informações sobre o mundo nerd e outros assuntos relacionados.
+        </h2>
         <span class="date-pg-news">00 de Julho de 2021</span>
-    <main>
-        <section class="section-main">
-            <div class="img-big-news">
-                <span class="lorem-news">Lorem</span>
-            </div>
-        </section>
-    </main>    
+        <main>
+            <section class="section-main">
+                <div class="container">
+                    <div class="img-big-news">
+                        <span class="lorem-news">Lorem</span>
+                    </div>
+                    <h5 class="h5-pg-news">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in mauris
+                        vel
+                        dolor consectetur scelerisque quis eu eros. Morbi varius eu odio nec vehicula. Maecenas blandit
+                        nunc
+                        vitae enim fermentum, nec ullamcorper magna molestie. Fusce efficitur ipsum ullamcorper tellus
+                        pharetra,
+                        et vehicula enim feugiat. Sed scelerisque at orci rhoncus dapibus. Donec maximus porttitor
+                        mauris. Sed
+                        tempus felis sit amet gravida sagittis. Ut eleifend ornare leo et auctor.
+                    </h5>
+                    <h5 class="h5-pg-news">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in mauris
+                        vel
+                        dolor consectetur scelerisque quis eu eros. Morbi varius eu odio nec vehicula. Maecenas blandit
+                        nunc
+                        vitae enim fermentum, nec ullamcorper magna molestie. Fusce efficitur ipsum ullamcorper tellus
+                        pharetra,
+                        et vehicula enim feugiat. Sed scelerisque at orci rhoncus dapibus. Donec maximus porttitor
+                        mauris. Sed
+                        tempus felis sit amet gravida sagittis. Ut eleifend ornare leo et auctor.
+                    </h5>
+                    <div class="img-big-news img-big-news2"></div>
+                    <h5 class="h5-pg-news">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in mauris
+                        vel
+                        dolor consectetur scelerisque quis eu eros. Morbi varius eu odio nec vehicula. Maecenas blandit
+                        nunc
+                        vitae enim fermentum, nec ullamcorper magna molestie. Fusce efficitur ipsum ullamcorper tellus
+                        pharetra,
+                        et vehicula enim feugiat. Sed scelerisque at orci rhoncus dapibus. Donec maximus porttitor
+                        mauris. Sed
+                        tempus felis sit amet gravida sagittis. Ut eleifend ornare leo et auctor.
+                    </h5>
+                </div>
+            </section>
+            <h4>Notícias mais recentes</h4>
+            <section class="section-bottom">
+                <div class="card-section-bottom">
+                    <span class="lorem-card">Lorem</span>
+                    <p class="p-card-aside">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eros tellus,
+                        malesuada et velit in, blandit molestie dolor.
+                    </p>
+                </div>
+                <div class="card-section-bottom card-section-bottom2">
+                    <span class="lorem-card">Lorem</span>
+                    <p class="p-card-aside">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eros tellus,
+                        malesuada et velit in, blandit molestie dolor.
+                    </p>
+                </div>
+                <div class="card-section-bottom card-section-bottom3">
+                    <span class="lorem-card">Lorem</span>
+                    <p class="p-card-aside">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eros tellus,
+                        malesuada et velit in, blandit molestie dolor.
+                    </p>
+                </div>
+                <div class="card-section-bottom card-section-bottom4">
+                    <span class="lorem-card">Lorem</span>
+                    <p class="p-card-aside">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eros tellus,
+                        malesuada et velit in, blandit molestie dolor.
+                    </p>
+                </div>
+                <div class="card-section-bottom card-section-bottom5">
+                    <span class="lorem-card">Lorem</span>
+                    <p class="p-card-aside">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eros tellus,
+                        malesuada et velit in, blandit molestie dolor.
+                    </p>
+                </div>
+                <div class="card-section-bottom card-section-bottom6">
+                    <span class="lorem-card">Lorem</span>
+                    <p class="p-card-aside">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eros tellus,
+                        malesuada et velit in, blandit molestie dolor.
+                    </p>
+                </div>
+            </section>
+            <footer>
+                <span class="naped">Naped</span>
+                <p class="p-footer">
+                    Todas as imagens de filmes, séries e etc são marcas registradas <br /> dos seus respectivos
+                    proprietários.
+                </p>
+            </footer>
+        </main>
+        <script>
+            function clickMenu() {
+                if (menu.style.display == 'block') {
+                    menu.style.display = 'none';
+                } else {
+                    menu.style.display = 'block';
+                }
+            }
+        </script>
+    </div>
 </body>
 
 </html>
